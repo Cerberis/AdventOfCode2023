@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Extreme.Numerics" Version="8.1.22" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Days\Day1\Data.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

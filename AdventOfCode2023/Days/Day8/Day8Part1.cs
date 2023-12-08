@@ -6,12 +6,23 @@
         {
         }
 
-        internal override long Calculate()
+        internal override string Calculate()
         {
-            long totalScore = 0;
-           
+            long turnsTaken = 0;
+            var currentNode = "AAA";
+            var currentInstructions = Instructions;
+            while (currentNode != EndingNode)
+            {
+                if (currentInstructions.Length == 0)
+                    currentInstructions = Instructions;
 
-            return totalScore;
+                currentNode = currentInstructions[0] == 'L' ? Direction[currentNode].Item1 : Direction[currentNode].Item2;
+
+                currentInstructions = currentInstructions.Remove(0, 1);
+                turnsTaken++;
+            }
+
+            return turnsTaken.ToString();
         }
     }
 }
