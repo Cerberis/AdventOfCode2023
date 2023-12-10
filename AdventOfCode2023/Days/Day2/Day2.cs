@@ -67,16 +67,12 @@ internal abstract class Day2
 
     static CubeColour GetCubeColour(string colour)
     {
-        switch (colour.ToLower())
+        return colour.ToLower() switch
         {
-            case "red":
-                return CubeColour.Red;
-            case "green":
-                return CubeColour.Green;
-            case "blue":
-                return CubeColour.Blue;
-        }
-
-        throw new InvalidEnumArgumentException($"Invalid colour: {colour}");
+            "red" => CubeColour.Red,
+            "green" => CubeColour.Green,
+            "blue" => CubeColour.Blue,
+            _ => throw new InvalidEnumArgumentException($"Invalid colour: {colour}"),
+        };
     }
 }

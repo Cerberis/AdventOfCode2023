@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode2023.Models
 {
-    internal class PartNumber
+    public class PartNumber
     {
         public int? Number;
         public int RowFrom;

@@ -35,7 +35,5 @@
         }
 
         internal abstract string Calculate();
-
-        //12355904733788 too high
     }
 }

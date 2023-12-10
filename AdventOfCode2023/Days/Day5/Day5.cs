@@ -55,7 +55,7 @@ namespace AdventOfCode2023.Days.Day5
 
         internal abstract long Calculate();
 
-        internal virtual long GetSeedLocation(long seed)
+        internal long GetSeedLocation(long seed)
         {
             long initialDataToMap = seed;
             foreach (var mapper in MappersDictionary)

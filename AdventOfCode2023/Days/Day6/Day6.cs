@@ -32,7 +32,7 @@
 
         internal abstract long Calculate();
 
-        internal virtual long GetAvailableWinCount(Race race)
+        internal long GetAvailableWinCount(Race race)
         {
             var winCount = 0;
             for (long startingSpeed = 0; startingSpeed < race.Time; startingSpeed++)

@@ -32,7 +32,7 @@
             }
         }
 
-        internal virtual void GetCardScores()
+        internal void GetCardScores()
         {
             foreach (var bettingHand in Hands)
             {
@@ -88,12 +88,12 @@
 
         internal abstract long Calculate();
 
-        internal virtual bool UniqueCards(string hand, int uniqueCardsNeeded)
+        internal bool UniqueCards(string hand, int uniqueCardsNeeded)
         {
             return hand.Distinct().Count() == uniqueCardsNeeded;
         }
 
-        internal virtual bool HasFullHouse(string hand)
+        internal bool HasFullHouse(string hand)
         {
             var data = hand.GroupBy(m => m)
                 .Select(group => new
