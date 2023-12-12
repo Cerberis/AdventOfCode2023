@@ -6,4 +6,14 @@ public static class FileReaders
     {
         return File.ReadLines(filePath).ToList();
     }
+
+    public static List<List<char>> ReadDataFileAsCharMatrix(string filePath)
+    {
+        var result = new List<List<char>>();
+        foreach (var line in File.ReadAllLines(filePath))
+        {
+            result.Add(line.ToList());
+        }
+        return result;
+    }
 }

@@ -1,5 +1,8 @@
 ﻿using AdventOfCode2023.Days.Day1;
 using AdventOfCode2023.Days.Day10;
+using AdventOfCode2023.Days.Day11;
+using AdventOfCode2023.Days.Day12;
+using AdventOfCode2023.Days.Day13;
 using AdventOfCode2023.Days.Day2;
 using AdventOfCode2023.Days.Day3;
 using AdventOfCode2023.Days.Day4;
@@ -118,6 +121,36 @@ namespace AdventOfCode2023
                 case RunMode.Day10Part2:
                     {
                         Day10Part2Handler();
+                        break;
+                    }
+                case RunMode.Day11Part1:
+                    {
+                        Day11Part1Handler();
+                        break;
+                    }
+                case RunMode.Day11Part2:
+                    {
+                        Day11Part2Handler();
+                        break;
+                    }
+                case RunMode.Day12Part1:
+                    {
+                        Day12Part1Handler();
+                        break;
+                    }
+                case RunMode.Day12Part2:
+                    {
+                        Day12Part2Handler();
+                        break;
+                    }
+                case RunMode.Day13Part1:
+                    {
+                        Day13Part1Handler();
+                        break;
+                    }
+                case RunMode.Day13Part2:
+                    {
+                        Day13Part2Handler();
                         break;
                     }
             }
@@ -262,6 +295,48 @@ namespace AdventOfCode2023
         {
             string path = GetPath(@"Days\Day10\Data.txt");
             var handler = new Day10Part2(path);
+            handler.Execute();
+        }
+
+        static void Day11Part1Handler()
+        {
+            string path = GetPath(@"Days\Day11\Data.txt");
+            var handler = new Day11Part1(path);
+            handler.Execute();
+        }
+
+        static void Day11Part2Handler()
+        {
+            string path = GetPath(@"Days\Day11\Data.txt");
+            var handler = new Day11Part2(path);
+            handler.Execute();
+        }
+
+        static void Day12Part1Handler()
+        {
+            string path = GetPath(@"Days\Day12\Data.txt");
+            var handler = new Day12Part1(path);
+            handler.Execute();
+        }
+
+        static void Day12Part2Handler()
+        {
+            string path = GetPath(@"Days\Day12\Data.txt");
+            var handler = new Day12Part2(path);
+            handler.Execute();
+        }
+
+        static void Day13Part1Handler()
+        {
+            string path = GetPath(@"Days\Day13\Data.txt");
+            var handler = new Day13Part1(path);
+            handler.Execute();
+        }
+
+        static void Day13Part2Handler()
+        {
+            string path = GetPath(@"Days\Day13\Data.txt");
+            var handler = new Day13Part2(path);
             handler.Execute();
         }
 
